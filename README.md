@@ -1,5 +1,13 @@
 # Lab8_Starter
 
+## Authors
+
+Bryce Tsuyuki
+
+## `npm test` Screenshot
+
+![Screenshot](npm-test.png)
+
 ## Check your understanding q's (FILL OUT)
 
 1. In your own words: Where would you fit your automated tests in your Bujo project development pipeline? (just write the letter)
@@ -20,7 +28,7 @@
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
 
-    Answer: We need to click on the settings page to go to it after we wait for the timeout. We also need to use `beforeEach` instead of `beforeAll` to make sure that it runs before every test. The code to do that is in the following snippet:
+    Answer: We need to click on the settings page to go to it from the home page after we wait for the timeout. We also need to use `beforeEach` instead of `beforeAll` to make sure that it runs before every test. The code to do that is in the following snippet:
 
     ```js
     beforeEach(async () => {
