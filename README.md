@@ -20,4 +20,12 @@
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
 
-    Answer:
+    Answer: We need to click on the settings page to go to it after we wait for the timeout. We also need to use `beforeEach` instead of `beforeAll` to make sure that it runs before every test. The code to do that is in the following snippet:
+
+    ```js
+    beforeEach(async () => {
+        await page.goto('http://127.0.0.1:5500');
+        await page.waitForTimeout(500);
+        await page.click("header > img");
+    });
+    ```
