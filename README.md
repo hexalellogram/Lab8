@@ -16,7 +16,7 @@
 
 4. What do you expect to happen if we run our puppeteer tests with the field “headless” set to true?
 
-    Answer:
+    Answer: If we run puppeteer tests with `headless` set to `true` then the browser will not be shown while we run our tests. This means that we will not see the framework automatically interacting with our webpage while the tests are running. The tests will just occur automatically in the background outside of our vision, and then the results will be reported at the end.
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
 
